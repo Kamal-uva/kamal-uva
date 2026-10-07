@@ -26,8 +26,6 @@ My work spans **cloud infrastructure, reinforcement learning, data engineering, 
 
 Leading development of race-strategy simulation software that compares vehicle physics, solar input, weather forecasts, battery state, and competing speed-control strategies.
 
-I also built a parameter-management system for tracking the **quality and source of vehicle data**, replacing manual configuration and reducing simulator setup time by ~40%.
-
 # ◉ CHOOSE YOUR MISSION
 
 | Focus | Project | Demonstrates |
