@@ -4,8 +4,6 @@
 
 <div align="center">
 
-# Kamal Sangameswaran
-
 **Software Engineer · AI/ML · Cloud · Simulation**
 
 *Building intelligent systems that survive contact with the real world.*
