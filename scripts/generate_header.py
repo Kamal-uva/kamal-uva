@@ -9,7 +9,7 @@ W, H = 900, 240
 BG = (5, 7, 8)
 FG = (218, 224, 220)
 MUTED = (108, 120, 116)
-RED = (185, 45, 45)
+GREEN = (70, 200, 120)
 BORDER = (55, 65, 62)
 
 FONT_PATH = "/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf"
@@ -19,22 +19,22 @@ FN = ImageFont.truetype(FONT_PATH, 23)
 
 lines = [
     ("> ESTABLISHING SECURE CONNECTION...", FG, 58, 68, FM),
-    ("> IDENTITY CONFIRMED", RED, 58, 98, FM),
+    ("> ACCESS GRANTED", GREEN, 58, 98, FM),
     ("KAMAL SANGAMESWARAN", FG, 58, 135, FN),
     ("SOFTWARE ENGINEER // AI // CLOUD // SIMULATION", FG, 58, 173, FM),
-    ("> LOADING MISSION BRIEFING...", MUTED, 58, 202, FM),
+    ("> MISSION BRIEFING READY_", MUTED, 58, 202, FM),
 ]
 
 def make(progress, cursor_line=None, cursor_on=True):
     im = Image.new("P", (W, H), 0)
-    palette = [*BG, *FG, *MUTED, *RED, *BORDER] + [0, 0, 0] * 251
+    palette = [*BG, *FG, *MUTED, *GREEN, *BORDER] + [0, 0, 0] * 251
     im.putpalette(palette[:768])
     d = ImageDraw.Draw(im)
     d.rectangle((18, 14, W - 18, H - 14), outline=4, width=1)
-    d.text((38, 30), "SECURE TERMINAL // KAMAL-UVA", font=FS, fill=2)
-    d.text((W - 190, 30), "SESSION: ACTIVE", font=FS, fill=2)
+    d.text((38, 30), "Q BRANCH TERMINAL // KAMAL-UVA", font=FS, fill=2)
+    d.text((W - 190, 30), "FOR YOUR EYES ONLY", font=FS, fill=2)
     d.line((38, 52, W - 38, 52), fill=4, width=1)
-    colors = {FG: 1, MUTED: 2, RED: 3}
+    colors = {FG: 1, MUTED: 2, GREEN: 3}
     for i, (txt, col, x, y, ft) in enumerate(lines):
         p = progress[i]
         shown = txt[:math.ceil(len(txt) * p)]
