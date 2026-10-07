@@ -40,8 +40,6 @@ I'm leading development of simulation software used to explore a deceptively dif
 
 The simulator compares race strategies against vehicle physics, solar input, weather forecasts, battery state, and other energy constraints to support pre-race planning.
 
-My work also includes building a parameter-management system for tracking the **quality and source of vehicle data**, replacing manual configuration and reducing simulator setup time by ~40%.
-
 <br>
 
 # ◉ CHOOSE YOUR MISSION
